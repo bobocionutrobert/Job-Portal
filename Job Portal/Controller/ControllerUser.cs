@@ -51,6 +51,18 @@ namespace Job_Portal.Controller
             return null;
         }
 
+        public User searchUserByName(string name)
+        {
+            foreach(User user in users)
+            {
+                if (user.Name.Equals(name))
+                {
+                    return user;
+                }
+            }
+            return null;
+        }
+
         public bool addUser(User user)
         {
             int poz = positionById(user.Id);

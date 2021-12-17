@@ -83,6 +83,37 @@ namespace Job_Portal_Unit_Tests
             Assert.Equal(24, control.returnUserById(1).Age);
 
         }
+        [Fact]
+        public void TestUpdateEmployeePassword()
+        {
+            control.load();
+
+            User e = control.returnUserById(2);
+
+            if (e is Employee employee)
+            {
+                control.updateEmployeePassword(2, "updatedpassword");
+
+                Assert.Equal("updatedpassword", employee.Password);
+            }
+            
+             
+        }
+        [Fact]
+        public void TestUpdateEmployerPassword()
+        {
+            control.load();
+
+            User e = control.returnUserById(1);
+
+            if(e is Employer employer)
+            {
+                control.updateEmployerPassword(1, "updatedpasswordemplyer");
+
+                Assert.Equal("updatedpasswordemplyer", employer.Password);
+            }
+
+        }
 
 
     }

@@ -6,5 +6,7 @@ namespace Job_Portal.Model
 {
     public class Registration
     {
+
+
     }
 }

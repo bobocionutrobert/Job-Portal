@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Job_Portal.Controller;
+using Job_Portal.Model;
+using System;
 
 namespace Job_Portal
 {
@@ -6,7 +8,15 @@ namespace Job_Portal
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ControllerJob c = new ControllerJob();
+
+            Interview i = new Interview("3,2,empname2,description2,Interview,3,3,date3,title3");
+
+            c.addJob(i);
+
+            c.Save();
+
+           
         }
     }
 }
