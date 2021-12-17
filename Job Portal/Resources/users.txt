@@ -1,0 +1,2 @@
+﻿1,Employer,george,georgeemail,34,craiova,1,0731827218,username,password,2831
+2,Employee,marcel,marcelemail,26,craiova,2,0837123902,username,password

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Job_Portal.Model
 {
-    class Registration
+    public class Registration
     {
     }
 }
